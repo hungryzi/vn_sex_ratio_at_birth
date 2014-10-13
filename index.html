@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vietnam Sex Ratio At Birth</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+      }
+      .boundary {
+        fill: none;
+        stroke: #777;
+        stroke-dasharray: 2,2;
+        stroke-linejoin: round;
+      }
+      path {
+        stroke: white;
+        stroke-width: 0.1px;
+      }
+
+      path:hover {
+        stroke-width: 2px;
+      }
+
+      .background {
+        fill: none;
+        pointer-events: all;
+      }
+      #map {
+        width: 66%;
+        float: left;
+      }
+      #controls {
+        width: 34%;
+        float: left;
+      }
+    </style>
+
+    <script src="d3/d3.js"></script>
+    <script src="d3/queue.js"></script>
+    <script src="d3/topojson.js"></script>
+  </head>
+
+  <body>
+    <h3>Sex Ratio at Birth in Vietnam</h3>
+    <div id="map"></div>
+    <div id="controls"></div>
+    <script src="sex_ratio_at_birth.js"></script>
+  </body>
+</html>
