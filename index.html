@@ -27,12 +27,22 @@
         pointer-events: all;
       }
       #map {
-        width: 66%;
-        float: left;
+        position: relative;
+        background: #eee;
       }
       #controls {
+        position: absolute;
+        right: 10px;
+        top: 10px;
         width: 34%;
         float: left;
+        background: #fff;
+        padding: 10px;
+      }
+      .square {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
       }
     </style>
 
@@ -44,7 +54,6 @@
   <body>
     <h3>Sex Ratio at Birth in Vietnam</h3>
     <div id="map"></div>
-    <div id="controls"></div>
     <script src="sex_ratio_at_birth.js"></script>
   </body>
 </html>
